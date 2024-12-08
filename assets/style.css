@@ -247,6 +247,19 @@ button[type="submit"] {
 	width: 100%;
 }
 
+.footer {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.footer p {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;

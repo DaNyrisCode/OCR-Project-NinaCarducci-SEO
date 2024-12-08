@@ -24,11 +24,11 @@
 
 		<!-- Fonts -->
 		<link
-			rel="preload"
+			rel="preconnect"
 			href="https://fonts.googleapis.com"
 		/>
 		<link
-			rel="preload"
+			rel="preconnect"
 			href="https://fonts.gstatic.com"
 			crossorigin
 		/>
@@ -36,25 +36,6 @@
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 			rel="stylesheet"
 		/>
-
-		<!-- JS -->
-		<script
-			src="./assets/bootstrap/bootstrap.bundle.min.js"
-			defer
-		></script>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="./assets/maugallery.min.js"
-			defer
-		></script>
-		<script
-			src="./assets/scripts.min.js"
-			defer
-		></script>
 	</head>
 
 	<body>
@@ -200,9 +181,8 @@
 		<section id="about">
 			<div class="picture left">
 				<img
-					loading="lazy"
-					src="./assets/images/nina.webp"
-					alt="Portrait de Nina Carducci, photographe professionnelle"
+					src="./assets/images/portrait-nina-carducci-photographe-800.webp"
+					alt="Portrait de Nina Carducci, photographe professionnelle, posant en plein air avec une salopette en jean et un t-shirt rayé"
 					width="405"
 				/>
 			</div>
@@ -242,13 +222,24 @@
 						data-gallery-tag="Concert"
 						class="gallery-item"
 						src="./assets/images/gallery/concerts/concert-scene-rouge-crowd-lumiere-1000.webp"
+						srcset="
+							./assets/images/gallery/concerts/concert-scene-rouge-crowd-lumiere-800.webp   800w,
+							./assets/images/gallery/concerts/concert-scene-rouge-crowd-lumiere-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
 						alt="Une scène de concert illuminée par des lumières rouges avec une foule enthousiaste applaudissant sous une structure en cercle"
 					/>
+
 					<img
 						loading="lazy"
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/jeune-entrepreneur-costume-business-1000.webp"
+						srcset="
+							./assets/images/gallery/entreprise/jeune-entrepreneur-costume-business-800.webp   800w,
+							./assets/images/gallery/entreprise/jeune-entrepreneur-costume-business-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
 						alt="Un jeune entrepreneur confiant portant un costume élégant et posant fièrement dans un cadre professionnel"
 					/>
 					<img
@@ -256,41 +247,71 @@
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/equipe-collaboration-bureau-femme-souriante-1000.webp"
+						srcset="
+							./assets/images/gallery/entreprise/equipe-collaboration-bureau-femme-souriante-800.webp   800w,
+							./assets/images/gallery/entreprise/equipe-collaboration-bureau-femme-souriante-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
 						alt="Une femme souriante participant à une discussion collaborative dans un espace de travail lumineux"
 					/>
 					<img
 						loading="lazy"
 						data-gallery-tag="Mariages"
 						class="gallery-item"
-						src="./assets/images/gallery/mariage/playmobile.webp"
-						alt="en avant les histoires"
+						src="./assets/images/gallery/mariage/mains-tendues-mariage-1000.webp"
+						srcset="
+							./assets/images/gallery/mariage/mains-tendues-mariage-800.webp   800w,
+							./assets/images/gallery/mariage/mains-tendues-mariage-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
+						alt="Mains d'un couple se rejoignant symbolisant une union ou un mariage romantique"
 					/>
 					<img
 						loading="lazy"
 						data-gallery-tag="Portrait"
 						class="gallery-item"
-						src="./assets/images/gallery/portraits/chanteur.webp"
-						alt="j'ai pu son nom"
+						src="./assets/images/gallery/portraits/chanteur-portrait-exterieur-1000.webp"
+						srcset="
+							./assets/images/gallery/portraits/chanteur-portrait-exterieur-800.webp   800w,
+							./assets/images/gallery/portraits/chanteur-portrait-exterieur-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
+						alt="Portrait d'un homme aux cheveux crépus portant une chaîne, éclairé par la lumière naturelle"
 					/>
 					<img
 						loading="lazy"
 						data-gallery-tag="Mariages"
 						class="gallery-item"
-						src="./assets/images/gallery/mariage/post-malone.webp"
-						alt="sunflower"
+						src="./assets/images/gallery/mariage/maries-heureux-palmier-1000.webp"
+						srcset="
+							./assets/images/gallery/mariage/maries-heureux-palmier-800.webp   800w,
+							./assets/images/gallery/mariage/maries-heureux-palmier-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
+						alt="Un couple marié souriant, marchant main dans la main sous un grand palmier"
 					/>
 					<img
 						loading="lazy"
 						data-gallery-tag="Portrait"
 						class="gallery-item"
-						src="./assets/images/gallery/portraits/femme.webp"
-						alt="g pu d'inspi"
+						src="./assets/images/gallery/portraits/femme-portrait-cloture-1000.webp"
+						srcset="
+							./assets/images/gallery/portraits/femme-portrait-cloture-800.webp   800w,
+							./assets/images/gallery/portraits/femme-portrait-cloture-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
+						alt="Portrait d'une jeune femme portant des lunettes et posant près d'une clôture sous un ciel bleu"
 					/>
 					<img
 						loading="lazy"
 						data-gallery-tag="Concert"
 						class="gallery-item"
 						src="./assets/images/gallery/concerts/chanteur-concert-nuage-effet-lumiere-1000.webp"
+						srcset="
+							./assets/images/gallery/concerts/chanteur-concert-nuage-effet-lumiere-800.webp   800w,
+							./assets/images/gallery/concerts/chanteur-concert-nuage-effet-lumiere-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
 						alt="Un chanteur sur scène, tenant un micro et tendant la main vers le public, entouré de nuages et d'effets lumineux"
 					/>
 					<img
@@ -298,6 +319,11 @@
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/femme-souriante-travail-ordinateur-justice-1000.webp"
+						srcset="
+							./assets/images/gallery/entreprise/femme-souriante-travail-ordinateur-justice-800.webp   800w,
+							./assets/images/gallery/entreprise/femme-souriante-travail-ordinateur-justice-1000.webp 1000w
+						"
+						sizes="(max-width: 768px) 100vw, 1000px"
 						alt="Une femme souriante travaillant sur un ordinateur portable, avec une tasse de café et une balance dorée en arrière-plan"
 					/>
 				</div>
@@ -381,6 +407,8 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
+
+		<!-- Contact -->
 		<section id="contact">
 			<div class="container">
 				<div class="form-container">
@@ -418,11 +446,32 @@
 				<div class="picture right">
 					<img
 						loading="lazy"
-						src="./assets/images/camera.webp"
-						alt="appareil photo"
+						src="./assets/images/appareil-photo-leica-lumiere-rouge-800.webp"
+						alt="Appareil photo Leica éclairé par une lumière rouge"
 					/>
 				</div>
 			</div>
 		</section>
+		<footer
+			class="footer"
+			aria-label="Coordonnées professionnelles"
+		>
+			<h5>Comment me contacter :</h5>
+			<p>Mon numéro de téléphone : 05 56 67 78 89</p>
+			<p>Joignable du lundi au vendredi de 10h à 19h</p>
+
+			<h5>Mon adresse :</h5>
+			<p>68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+		</footer>
 	</body>
+
+	<!-- JS -->
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"
+	></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
 </html>

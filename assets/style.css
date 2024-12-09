@@ -1,7 +1,9 @@
 body {
 	max-width: 1920px;
-	margin: auto;
 	font-family: 'Spectral', 'Inter', Arial, sans-serif;
+	min-height: 100vh;
+  	overflow-x: hidden;
+	padding: 0;
 }
 * {
 	font-family: 'Inter';
@@ -94,7 +96,7 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral', Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	font-style: italic;
@@ -274,7 +276,7 @@ button[type="submit"] {
 	margin-bottom: 5px;
 }
 
-@media all and (max-width: 1180px) {
+@media all and (max-width: 1200px) {
 	.picture {
 		flex : 2;
 	}

@@ -1,6 +1,7 @@
 body {
 	max-width: 1920px;
 	margin: auto;
+	font-family: 'Spectral', 'Inter', Arial, sans-serif;
 }
 * {
 	font-family: 'Inter';
@@ -42,12 +43,18 @@ body {
 	width: 20px;
 }
 
+.carousel-inner img {
+	height: auto;
+	object-fit: cover;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	min-height: 500px;
 }
 
 .picture.left::before {

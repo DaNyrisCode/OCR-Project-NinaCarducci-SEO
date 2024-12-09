@@ -44,8 +44,10 @@
 			crossorigin
 		/>
 		<link
+			rel="preload"
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-			rel="stylesheet"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
 		/>
 
 		<!-- OpenGraph -->
@@ -205,7 +207,6 @@
 					</div>
 					<div class="carousel-item">
 						<img
-							loading="lazy"
 							src="./assets/images/slider/concert-foule-1200.webp"
 							srcset="
 								./assets/images/slider/concert-foule-800.webp   800w,
@@ -222,7 +223,6 @@
 					</div>
 					<div class="carousel-item">
 						<img
-							loading="lazy"
 							src="./assets/images/slider/mariage-danse-nuit-1200.webp"
 							srcset="
 								./assets/images/slider/mariage-danse-nuit-800.webp   800w,

@@ -43,6 +43,11 @@ body {
 	width: 20px;
 }
 
+.carousel {
+	width: 100%;
+	max-width: 1920px;
+	height: auto;
+}
 .carousel-inner img {
 	height: auto;
 	object-fit: cover;

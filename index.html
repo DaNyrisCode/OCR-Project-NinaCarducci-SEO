@@ -169,7 +169,11 @@
 		</header>
 
 		<!-- Carousel -->
-		<section id="header">
+		<section
+			id="header"
+			role="region"
+			aria-label="Galerie de photos"
+		>
 			<div
 				id="carouselExampleIndicators"
 				class="carousel slide"
@@ -316,8 +320,17 @@
 		</section>
 
 		<!-- Galerie -->
-		<section id="gallery">
-			<h2 class="title">Portfolio</h2>
+		<section
+			id="gallery"
+			role="region"
+			aria-labelledby="portfolio-title"
+		>
+			<h2
+				id="portfolio-title"
+				class="title"
+			>
+				Portfolio
+			</h2>
 			<div class="container py-3">
 				<div
 					class="gallery"
@@ -534,6 +547,7 @@
 		<footer
 			class="footer"
 			aria-label="Coordonnées professionnelles"
+			role="contentinfo"
 		>
 			<h5>Comment me contacter :</h5>
 			<p>Mon numéro de téléphone : 05 56 67 78 89</p>
